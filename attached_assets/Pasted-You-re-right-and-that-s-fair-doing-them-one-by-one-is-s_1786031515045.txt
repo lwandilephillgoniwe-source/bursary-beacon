@@ -1,0 +1,25 @@
+You're right, and that's fair — doing them one-by-one is slow when they're part of the same pipeline. Let me give you one instruction that does both, in the correct order inside a single task.
+
+Fix the collection pipeline: resolve bursary pages, then auto-publish the high-confidence ones.
+
+Do both parts in this order, in one task.
+
+Part A — Land on the real bursary page, not the homepage.
+Most sources point at a root domain (e.g. sanlam.co.za), so the collector reads a homepage, finds no bursary or closing date, and errors. Fix it:
+
+When a source URL is a homepage, first find the bursary/learnership page on that site (follow links containing "bursary", "bursaries", "scholarship", "learnership", "careers", "apply"), then extract from that page.
+Update the source's stored URL to the resolved bursary page so future runs go straight there.
+If no bursary page is found, mark the source with an error reason ("no bursary page found") and leave it for review — never extract from the homepage or guess.
+Make sure date extraction handles PDF and image adverts (OCR/vision) since many dates live there.
+
+Part B — Auto-publish high-confidence records only.
+After Part A improves what's collected, auto-publish a record ONLY if ALL are true: parseable closing date present; closing date is in the future (Africa/Johannesburg); official application link verified live (returns 200); organisation identified; confidence = high; not a duplicate.
+
+Everything else stays in Draft.
+Never auto-publish with no date, a past date, or low/medium confidence.
+Do not bulk-publish the existing Draft backlog — only newly collected/re-extracted records.
+Log every auto-publish (record, date, confidence, source URL) for audit.
+
+Prove it: run the pipeline on these 5 funders first — Sasol, Capitec, NSFAS, SAICA Thuthuka, Standard Bank. Show me, for each: homepage URL → resolved bursary page → closing date found → whether it auto-published or stayed in Draft and why.
+
+Don't touch learnerships, the homepage design, or other features.
