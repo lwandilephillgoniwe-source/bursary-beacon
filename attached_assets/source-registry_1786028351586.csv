@@ -1,0 +1,70 @@
+name,type,tier,ingest_method,official_url,url_confidence,notes
+NSFAS,bursary,1_official,scrape,https://www.nsfas.org.za,high,Biggest govt funder. Point collector at bursary/application section.
+DHET,bursary,1_official,scrape,https://www.dhet.gov.za,high,Dept of Higher Ed. Announcements often PDF - expect OCR path.
+Funza Lushaka,bursary,1_official,scrape,https://www.funzalushaka.doe.gov.za,medium,Teaching bursary. Confirm current live domain.
+Sasol Foundation,bursary,1_official,scrape,https://www.sasol.com,high,Locate the bursary/careers page; you already publish this one.
+Eskom,bursary,1_official,scrape,https://www.eskom.co.za,high,Careers/bursaries section.
+Transnet,bursary,1_official,scrape,https://www.transnet.net,high,Careers/bursaries section.
+Anglo American,bursary,1_official,scrape,https://www.angloamerican.com,high,Engineering/mining bursaries; work-back obligation.
+Kumba Iron Ore,bursary,1_official,scrape,https://www.angloamericankumba.com,medium,Anglo subsidiary. Confirm bursary page.
+ABSA,bursary,1_official,scrape,https://www.absa.co.za,high,Careers/bursaries.
+Investec,bursary,1_official,scrape,https://www.investec.com,high,Bursary/CSI section.
+Standard Bank,bursary,1_official,scrape,https://www.standardbank.co.za,high,Careers/bursaries.
+Nedbank,bursary,1_official,scrape,https://www.nedbank.co.za,high,Careers/bursaries.
+FirstRand / FNB,bursary,1_official,scrape,https://www.firstrand.co.za,high,FirstRand Empowerment Foundation admin via StudyTrust.
+Old Mutual,bursary,1_official,scrape,https://www.oldmutual.co.za,high,Multiple streams (actuarial / CA / OMET) - register separately if needed.
+Sanlam,bursary,1_official,scrape,https://www.sanlam.co.za,high,Actuarial bursary.
+Momentum,bursary,1_official,scrape,https://www.momentum.co.za,high,Investments bursary.
+Capitec,bursary,1_official,scrape,https://www.capitecbank.co.za,high,General + Quantitative Skills streams.
+Shoprite Group,bursary,1_official,scrape,https://www.shopriteholdings.co.za,high,Accounting/agri/retail/supply chain.
+Coronation,bursary,1_official,scrape,https://www.coronation.com,high,Exceptional Student Bursary.
+Ninety One,bursary,1_official,scrape,https://www.ninetyone.com,high,Changeblazer bursary.
+Allan Gray Orbis Foundation,bursary,1_official,scrape,https://www.allangrayorbis.org,high,Fellowship at partner universities.
+Mastercard Foundation,bursary,1_official,scrape,https://mastercardfdn.org,high,Scholars Program.
+Telkom Foundation,bursary,1_official,scrape,https://www.telkom.co.za,medium,Telkom Foundation bursary; confirm page.
+Land Bank,bursary,1_official,scrape,https://www.landbank.co.za,high,Agriculture bursary; administered in-house.
+PPS Foundation,bursary,1_official,scrape,https://www.pps.co.za,medium,Confirm foundation/bursary page.
+Genesis Analytics,bursary,1_official,scrape,https://www.genesis-analytics.com,medium,GEFT postgraduate bursary.
+Hollywood Foundation,bursary,1_official,scrape,https://hollywoodfoundation.co.za,high,Future is Bright bursary; you already publish this.
+Hortgro,bursary,1_official,scrape,https://www.hortgro.co.za,high,Agri bursary; you already publish this.
+SAICA Thuthuka,bursary,1_official,scrape,https://www.saica.org.za,high,High-demand CA bursary.
+SAIPA,bursary,1_official,scrape,https://www.saipa.co.za,medium,Accounting scholarship.
+StudyTrust,bursary,1_official,scrape,https://www.studytrust.org.za,high,Administers many programmes - one source, many opportunities.
+IDC,bursary,1_official,scrape,https://www.idc.co.za,high,External Bursary Scheme; you already publish this.
+CSIR,bursary,1_official,scrape,https://www.csir.co.za,high,Incl. CSIR-Sasol Foundation joint bursary.
+NRF,bursary,1_official,scrape,https://www.nrf.ac.za,high,Postgraduate research funding.
+Mandela Rhodes Foundation,bursary,1_official,scrape,https://www.mandelarhodes.org,high,Scholarship; you already track this (closed record).
+Deloitte,bursary,1_official,scrape,https://www.deloitte.com/za,medium,Accounting/CA bursary; confirm ZA careers page.
+PwC,bursary,1_official,scrape,https://www.pwc.co.za,high,CA bursary.
+KPMG,bursary,1_official,scrape,https://kpmg.com/za,medium,CA bursary; confirm ZA page.
+EY,bursary,1_official,scrape,https://www.ey.com,medium,CA bursary; confirm ZA page.
+BDO,bursary,1_official,scrape,https://www.bdo.co.za,medium,CA bursary.
+University of Pretoria,bursary,1_official,scrape,https://www.up.ac.za,high,Financial aid / bursary page.
+University of Johannesburg,bursary,1_official,scrape,https://www.uj.ac.za,high,Financial aid page.
+University of the Western Cape,bursary,1_official,scrape,https://www.uwc.ac.za,high,Financial aid page.
+University of KwaZulu-Natal,bursary,1_official,scrape,https://www.ukzn.ac.za,high,Financial aid page.
+Wits University,bursary,1_official,scrape,https://www.wits.ac.za,high,Financial aid page.
+University of Cape Town,bursary,1_official,scrape,https://www.uct.ac.za,high,Postgraduate financial aid bursary.
+Stellenbosch University,bursary,1_official,scrape,https://www.sun.ac.za,high,Bursaries & loans page.
+North-West University,bursary,1_official,scrape,https://www.nwu.ac.za,high,Financial support page.
+University of the Free State,bursary,1_official,scrape,https://www.ufs.ac.za,high,Bursaries page.
+Rhodes University,bursary,1_official,scrape,https://www.ru.ac.za,high,Financial aid page.
+MERSETA,learnership,1_official,scrape,https://www.merseta.org.za,high,Manufacturing & engineering. High volume; expect PDFs.
+Services SETA,learnership,1_official,scrape,https://www.servicesseta.org.za,high,Largest SETA; office-based careers.
+SASSETA,learnership,1_official,scrape,https://www.sasseta.org.za,high,Safety & security.
+CETA,learnership,1_official,scrape,https://www.ceta.org.za,high,Construction.
+MICT SETA,learnership,1_official,scrape,https://www.mict.org.za,high,IT / media / telecoms.
+HWSETA,learnership,1_official,scrape,https://www.hwseta.org.za,high,Health & social development.
+BANKSETA,learnership,1_official,scrape,https://www.bankseta.org.za,high,Banking (Kuyasa/Letsema programmes).
+AGRISETA,learnership,1_official,scrape,https://www.agriseta.co.za,high,Agriculture.
+NSTF bursary directory,bursary,2_discovery,discovery,https://www.nstf.org.za,high,DISCOVERY ONLY - most comprehensive provider directory. Never publish from here; use to find names then verify at official source.
+allbursaries.co.za,bursary,2_discovery,discovery,https://allbursaries.co.za,high,DISCOVERY ONLY - large deadline-sorted directory.
+zabursaries.co.za,bursary,2_discovery,discovery,https://www.zabursaries.co.za,high,DISCOVERY ONLY - broad listing site.
+bursaries-southafrica.co.za,bursary,2_discovery,discovery,https://bursaries-southafrica.co.za,high,DISCOVERY ONLY.
+fundiconnect.co.za,bursary,2_discovery,discovery,https://fundiconnect.co.za,high,DISCOVERY ONLY.
+studentroom.co.za,bursary,2_discovery,discovery,https://www.studentroom.co.za,medium,DISCOVERY ONLY.
+startcareer.co.za,bursary,2_discovery,discovery,https://startcareer.co.za,medium,DISCOVERY ONLY.
+eduskills.co.za,learnership,2_discovery,discovery,https://www.eduskills.co.za,medium,DISCOVERY ONLY - SETA opportunities.
+edupstairs.org,learnership,2_discovery,discovery,https://www.edupstairs.org,medium,DISCOVERY ONLY.
+setacareers.co.za,learnership,2_discovery,discovery,https://www.setacareers.co.za,medium,DISCOVERY ONLY.
+navyblue.co.za SETA index,learnership,2_discovery,discovery,https://www.navyblue.co.za/seta,medium,DISCOVERY ONLY - directory of all 21 SETAs with links.
