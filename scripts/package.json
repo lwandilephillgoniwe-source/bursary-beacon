@@ -1,0 +1,34 @@
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "heartbeat": "tsx ./src/heartbeat.ts",
+    "seed": "tsx ./src/seed.ts",
+    "sources-seed": "tsx ./src/sources-seed.ts",
+    "affiliate-seed": "tsx ./src/seed-affiliate-links.ts",
+    "collect": "tsx ./src/collect.ts",
+    "admin-import": "tsx ./src/admin-import.ts",
+    "prove-headless-bursary": "tsx ./src/prove-headless-bursary.ts",
+    "prove-learnership-sources": "tsx ./src/prove-learnership-sources.ts",
+    "triage-bursary-roots": "tsx ./src/triage-bursary-roots.ts",
+    "reextract-bursary-backlog": "tsx ./src/reextract-bursary-backlog.ts",
+    "recheck": "tsx ./src/recheck.ts",
+    "test-alert": "tsx ./src/test-silent-alert.ts",
+    "seed-learnership-demo": "tsx ./src/seed-learnership-demo.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "@workspace/integrations-openai-ai-server": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "playwright": "1.62.1",
+    "zod": "catalog:"
+  }
+}
