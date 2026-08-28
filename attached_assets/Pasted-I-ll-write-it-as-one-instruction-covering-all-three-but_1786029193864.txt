@@ -1,0 +1,26 @@
+I'll write it as one instruction covering all three, but sequenced so each step proves itself before the next — and with the safety rule baked in so nothing dangerous auto-publishes.
+
+Here's the instruction to paste into Replit:
+
+Task: Run collection → fix date extraction → enable safe auto-publish. Do these in order, confirm each before moving on.
+
+Step 1 — Run collection against all active sources.
+Trigger the collection endpoint against the 66 active sources. Report how many new drafts were created, and of those, how many have a parseable closing_date vs how many came back with no date. Don't change extraction yet — I want the baseline.
+
+Step 2 — Fix closing-date extraction (the real bottleneck).
+Most drafts are landing with no closing date, which blocks the quality gate. Improve the extraction step so it reliably finds closing dates:
+
+Strengthen the extraction prompt to hunt for dates in multiple formats (e.g. "23 August 2026", "2026/08/23", "closing date:", "applications close", "deadline").
+Handle PDF and image adverts with the OCR/vision path before extraction — many bursaries hide the date in an image.
+When a date is found, store it with closing_date_confidence. When genuinely absent, leave it blank and keep the record in Draft (do not guess a date).
+Re-run extraction on the existing no-date drafts and report the before/after: how many now have dates.
+
+Step 3 — Enable high-confidence auto-publish only.
+Add auto-publish, but strictly gated:
+
+Auto-publish a record ONLY if ALL are true: parseable closing date present, closing date in the future, working official application link, organisation identified, not a duplicate, confidence score = high.
+Everything else stays in Draft for manual review.
+Never auto-publish a record with no closing date, a past date, or low confidence — even if all other checks pass.
+Log every auto-publish so I can audit what went live.
+
+Do NOT touch learnerships, the homepage, or add new features. Stay on these three steps. After each step, stop and show me the numbers before continuing.
